@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.krm.leslie-web"
+        id        = "com.krm.geocon"
         version   = "1.0.0">
 
-    <name>Leslie Web Site</name>
+    <name>GeoCongress</name>
 
     <description>
-        Leslie Johnson Technical Writing
+        Geolocation Tool for Congressional Info
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
