@@ -1,0 +1,201 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Legislator"
+    },
+    "designerId": "7519b28b-d373-4e48-a46f-de8b78af31ae",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLegislatorShow",
+                "implHandler": [
+                    "Ext.getCmp('viewport').getLayout().getAnimation().setReverse(false);"
+                ],
+                "name": "activate",
+                "designer|targetType": "Ext.tab.Panel",
+                "designer|controlQuery": "#legislatorTabPanel"
+            },
+            "designerId": "3c23fc0e-0ffe-4ec8-9086-fa897bccbbec"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLegislatorTap",
+                "implHandler": [
+                    "if (this.currentLegislator == record.data) {",
+                    "    Ext.getCmp('viewport').setActiveItem(1);",
+                    "    return;",
+                    "}",
+                    "",
+                    "this.currentLegislator = record.data;",
+                    "",
+                    "this.currentLegislator.committees = Ext.getStore('Committees').load({",
+                    "    params: {",
+                    "        bioguide_id: this.currentLegislator.bioguide_id",
+                    "    }",
+                    "});",
+                    "",
+                    "var legislator = Ext.getCmp('legislatorTabPanel');",
+                    "Ext.getCmp('splashScreen').animateTo('left');",
+                    "",
+                    "if (legislator) {",
+                    "    legislator.setData(this.currentLegislator);",
+                    "    Ext.getCmp('viewport').setActiveItem(1);",
+                    "} else {",
+                    "    Ext.getCmp('viewport').setActiveItem({",
+                    "        xclass: 'GeoCon.view.legislator.TabPanel'",
+                    "    });",
+                    "}",
+                    "",
+                    "Ext.getCmp('legislatorBio').setData(this.currentLegislator);",
+                    "Ext.getCmp('legislatorToolbar').setTitle(this.currentLegislator.title + \" \" + this.currentLegislator.lastname);",
+                    "Ext.getCmp('legislatorTabPanel').setActiveItem(0);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#legislatorList"
+            },
+            "designerId": "df7235ba-02d7-4178-a380-3e68101b9009"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBillListActivate",
+                "implHandler": [
+                    "if (this.currentBills != this.currentLegislator.bioguide_id) {",
+                    "    Ext.getStore('Bills').load({",
+                    "        params: {",
+                    "            sponsor_id: this.currentLegislator.bioguide_id",
+                    "        }",
+                    "    });",
+                    "    this.currentBills = this.currentLegislator.bioguide_id;",
+                    "}"
+                ],
+                "name": "activate",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#billList"
+            },
+            "designerId": "f0f58226-90aa-4140-894d-f789e38267f9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBillTap",
+                "implHandler": [
+                    "var billSummary = Ext.getCmp('billSummary');",
+                    "Ext.getCmp('splashScreen').animateTo('left');",
+                    "",
+                    "if (billSummary) {",
+                    "    billSummary.setData(record.data);",
+                    "    Ext.getCmp('viewport').setActiveItem(billSummary);",
+                    "} else {",
+                    "    Ext.getCmp('viewport').setActiveItem({",
+                    "        xclass: 'GeoCon.view.bill.Show',",
+                    "        data: record.data",
+                    "    });",
+                    "}",
+                    "",
+                    "Ext.getCmp('billSummaryToolbar').setTitle(record.data.bill_id);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#billList"
+            },
+            "designerId": "0df08f19-9475-418b-8dfe-875df26f3796"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onVoteListActivate",
+                "implHandler": [
+                    "if (this.currentVotes != this.currentLegislator.bioguide_id) {",
+                    "",
+                    "    var storeParams = {",
+                    "        sections: \"basic,voter_ids.\" + this.currentLegislator.bioguide_id",
+                    "    };",
+                    "    storeParams['voter_ids.' + this.currentLegislator.bioguide_id + '__exists'] = true;",
+                    "",
+                    "    Ext.getStore('Votes').load({",
+                    "        params: storeParams",
+                    "    });",
+                    "",
+                    "    this.currentVotes = this.currentLegislator.bioguide_id;",
+                    "}"
+                ],
+                "name": "activate",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#voteList"
+            },
+            "designerId": "2c7aa853-6cd7-4384-9c4e-b6026a209b22"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLegislatorBackButtonTap",
+                "implHandler": [
+                    "Ext.getCmp('splashScreen').animateTo('right');",
+                    "Ext.getCmp('viewport').setActiveItem(Ext.getCmp('splashScreen'));"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#legislatorBackButton"
+            },
+            "designerId": "8ee1523c-b215-46b1-a399-87c3f226cbe3"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBillSummaryBackButtonTap",
+                "implHandler": [
+                    "Ext.getCmp('splashScreen').animateTo('right');",
+                    "Ext.getCmp('viewport').setActiveItem(Ext.getCmp('legislatorTabPanel'));"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#billSummaryBackButton"
+            },
+            "designerId": "8682cd43-36f6-4f45-88a4-07fab518b81b"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "Districts",
+        "designer|userClassName": "Districts"
+    },
+    "designerId": "12a66509-0910-4b3b-abf9-d6e5b306d370",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{",
+                    "    apikey: '8a341f85c657435989e75c9a83294762'",
+                    "}",
+                    ""
+                ],
+                "url": "http://services.sunlightlabs.com/api/districts.getDistrictFromLatLong",
+                "callbackKey": "jsonp"
+            },
+            "designerId": "5a166c30-5965-43bf-beed-779d249001d1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "response.districts",
+                        "record": "district"
+                    },
+                    "designerId": "9a696983-530d-45f1-ad1a-39886b0cf36b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "state"
+            },
+            "designerId": "38809df2-b61b-4966-b7ab-d8a2644bca2d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "number"
+            },
+            "designerId": "e209c762-2d1b-408b-a748-223ad2f64ef0"
+        }
+    ]
+}

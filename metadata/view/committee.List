@@ -1,0 +1,32 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "committeeList",
+        "designer|userClassName": "committee.List",
+        "designer|userAlias": "committeelist",
+        "store": "Committees"
+    },
+    "designerId": "e020b7c4-7fa0-4cad-94ae-db3d25607568",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div class=\"committee\">{name}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "546509d1-8c4a-4eb1-b12e-449c10ccb056"
+        }
+    ]
+}

@@ -1,11 +1,23 @@
 CACHE MANIFEST
-# hash u9SEgyLd2pCJm9AgmCrO1E+7414=
-# uuid 907905d1682e45a1b3c617e72cf20255
+# hash gOB1q+DUOw/r0FOrVJTuTmqou2w=
+# uuid 32a2d6fac83541adaea290d296ad5538
 
-cordova.js
-images/pinstripes.png
+images/activities.png
+images/bannercomposite17.gif
+images/dining.png
+images/rates.png
+images/rooms.png
+index.css
+index.html
+index.js
+index_custom.js
+res/images/backButton3.png
+res/images/backButton4.png
+res/images/Clock30x30.png
 res/images/homescreenPrompt.png
 res/images/icon.png
+res/images/navigationBar.png
+res/images/PaperClip30x30.png
 res/images/pushButton1.png
 res/images/pushButton2.png
 res/images/sw-alpha-multi.png
@@ -21,9 +33,5 @@ res/jquery-1.8.3.min.js
 res/phoneui.js
 res/spinningwheel.css
 res/spinningwheel.js
-vibrate.css
-vibrate.html
-vibrate.js
-vibrate_custom.js
 
 NETWORK:

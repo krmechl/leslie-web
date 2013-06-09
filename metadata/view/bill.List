@@ -1,0 +1,35 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "billList",
+        "designer|userClassName": "bill.List",
+        "designer|userAlias": "billlist",
+        "store": "Bills",
+        "grouped": true
+    },
+    "designerId": "e1c7303d-008e-4f26-9ff2-b6347059cbbc",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div class=\"bill\">",
+                    "{[values.titles[0].title]}",
+                    "</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "58a8783e-6040-4b30-b07d-e290fca5f410"
+        }
+    ]
+}

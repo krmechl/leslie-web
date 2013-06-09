@@ -1,0 +1,37 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "legislatorList",
+        "designer|userClassName": "legislator.List",
+        "designer|userAlias": "legislatorlist",
+        "emptyText": "Loading list of Legislators...",
+        "store": "Legislators",
+        "grouped": true
+    },
+    "designerId": "9f6b7c8b-35c6-4de4-8472-810eb69988eb",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div class=\"legislator-list-item\">",
+                    "<span class=\"legislator-pic\" style=\"background-image: url(http://www.govtrack.us/data/photos/{govtrack_id}-50px.jpeg);\"></span>",
+                    "{lastname}, {firstname} {middlename}",
+                    "</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "521b94f9-7607-46bb-bcce-1b8d6a42f7f9"
+        }
+    ]
+}

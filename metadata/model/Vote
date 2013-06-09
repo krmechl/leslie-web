@@ -1,0 +1,256 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Vote"
+    },
+    "designerId": "371ec8fa-90f3-486a-9074-457702f0d73e",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "bill_id",
+                "type": "string"
+            },
+            "designerId": "525fe4d8-d870-4755-8e9d-6f7ea105fee4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "chamber",
+                "type": "string"
+            },
+            "designerId": "808ba851-e461-4862-9c3c-6b27559251ad"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "how",
+                "type": "string"
+            },
+            "designerId": "bb20193f-2d2b-419d-a19b-1145744c355a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "number",
+                "type": "float"
+            },
+            "designerId": "f200bfde-df6d-4246-8539-580852ad6fd6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "passage_type",
+                "type": "string"
+            },
+            "designerId": "dbb033c2-15aa-4f07-b783-d23e7c234146"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "question",
+                "type": "string"
+            },
+            "designerId": "6c9be07b-57df-4bb9-90fa-97be20889e49"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "required",
+                "type": "string"
+            },
+            "designerId": "267686a9-1edd-439d-a319-afc5ddd52b82"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "result",
+                "type": "string"
+            },
+            "designerId": "4fce92c8-1101-43be-b3b3-57034e522622"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "roll_id",
+                "type": "string"
+            },
+            "designerId": "f32ace21-ed80-48fa-b88d-8efe6e87dd73"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "roll_type",
+                "type": "string"
+            },
+            "designerId": "53f839ac-4f1e-495f-95fa-89795593ca7a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "session",
+                "type": "float"
+            },
+            "designerId": "28c6516f-ee86-426b-b254-79a2103b61de"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "vote_breakdown",
+                "type": "object"
+            },
+            "designerId": "b67759be-9ed4-449d-9fb0-5e23148542d8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "vote_type",
+                "type": "string"
+            },
+            "designerId": "e73db616-4369-4113-a0ee-f5572bea83c2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "voted_at",
+                "type": "date"
+            },
+            "designerId": "8fa22e70-3914-4dfe-82e9-a2796023d803"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "voted_at_str",
+                "type": "string"
+            },
+            "designerId": "2b0df22d-9ca1-459e-88ee-d8a1533d969c",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "convert",
+                        "designer|params": [
+                            "v",
+                            "rec"
+                        ],
+                        "implHandler": [
+                            "return Ext.Date.format(rec.data.voted_at, 'F j, Y');"
+                        ]
+                    },
+                    "designerId": "0c2d811d-9b5e-4dc0-9c2c-d846914f6434"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "voter_ids",
+                "type": "object"
+            },
+            "designerId": "b020225c-d838-4210-8fe3-8bc25087a250"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "year",
+                "type": "float"
+            },
+            "designerId": "dea2b04d-3977-4867-8603-37c81a1b73f2"
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "fade",
+        "id": "splashScreen",
+        "designer|userClassName": "Splash",
+        "designer|userAlias": "splash",
+        "layout": "card"
+    },
+    "designerId": "afeaade4-863e-49b7-950d-e78b46bf3c47",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "id": "splashToolbar",
+                "itemId": null,
+                "ui": "light",
+                "title": "Finding location..."
+            },
+            "designerId": "7561c6ab-fd87-4b1b-ad6f-d7c1e4f23bcc",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "settingsBtn",
+                        "ui": "plain",
+                        "iconCls": "settings",
+                        "iconMask": true,
+                        "text": null
+                    },
+                    "designerId": "91dbeb7b-0bcb-43ba-a77a-e4963bd6d218"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "74b8f12e-d7ba-4572-bdee-599da926a9f1",
+            "masterInstanceId": "9f6b7c8b-35c6-4de4-8472-810eb69988eb"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "e292752e-dbd3-4ef7-89df-aa8b9f0df21b",
+            "masterInstanceId": "8432ef22-2b4a-4acf-98ac-3b69054cafa3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "animateTo",
+                "designer|params": [
+                    "dir"
+                ],
+                "implHandler": [
+                    "Ext.getCmp('viewport').getLayout().setAnimation({",
+                    "    duration: 300,",
+                    "    easing: 'ease-in-out',",
+                    "    type: 'slide',",
+                    "    direction: dir",
+                    "});"
+                ]
+            },
+            "designerId": "1920836e-7abf-4f0f-95f3-368ce8721918"
+        }
+    ]
+}
