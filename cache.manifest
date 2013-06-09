@@ -1,10 +1,10 @@
 CACHE MANIFEST
-# hash gOB1q+DUOw/r0FOrVJTuTmqou2w=
+# hash /ftrup2f9y+KKuv8qE8zUQ2WoZo=
 # uuid 32a2d6fac83541adaea290d296ad5538
 
 images/activities.png
-images/bannercomposite17.gif
-images/dining.png
+images/default_logo.png
+images/logodbig1-150x150.png
 images/rates.png
 images/rooms.png
 index.css
@@ -13,11 +13,9 @@ index.js
 index_custom.js
 res/images/backButton3.png
 res/images/backButton4.png
-res/images/Clock30x30.png
 res/images/homescreenPrompt.png
 res/images/icon.png
 res/images/navigationBar.png
-res/images/PaperClip30x30.png
 res/images/pushButton1.png
 res/images/pushButton2.png
 res/images/sw-alpha-multi.png

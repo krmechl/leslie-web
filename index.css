@@ -244,6 +244,14 @@
   -webkit-border-image: url(res/images/backButton4.png) 10 10 10 26 stretch stretch;
 }
 
+.m1-font-4{
+  color: rgb(0,0,0);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
 .m1-background-4{
   background-color: rgba(0,0,0,0);
   background-image: 
@@ -260,7 +268,7 @@
   -webkit-border-radius: 3px;
 }
 
-.m1-font-4{
+.m1-font-5{
   color: rgb(156,154,156);
   font-family: Helvetica;
   font-size: 11px;
@@ -268,7 +276,7 @@
   text-decoration: none;
 }
 
-.m1-selected.m1-font-5{
+.m1-selected.m1-font-6{
   color: rgb(255,255,255);
   font-family: Helvetica;
   font-size: 11px;
@@ -295,52 +303,6 @@ body{
   width: 0px;
 }
 
-#m1-index-tabBar1-page5-label{
-  height: 12px;
-  left: 0px;
-  line-height: 12px;
-  margin-right: 0px;
-  top: 1px;
-  width: auto;
-}
-
-#m1-index-tabBar1-page5-img{
-  height: 30px;
-  left: 18px;
-  top: 0px;
-  width: 30px;
-}
-
-#m1-index-tabBar1-page5{
-  height: 43px;
-  left: 291px;
-  top: -169px;
-  width: 66px;
-}
-
-#m1-index-tabBar1-page4-label{
-  height: 12px;
-  left: 0px;
-  line-height: 12px;
-  margin-right: 0px;
-  top: 1px;
-  width: auto;
-}
-
-#m1-index-tabBar1-page4-img{
-  height: 30px;
-  left: 18px;
-  top: 0px;
-  width: 30px;
-}
-
-#m1-index-tabBar1-page4{
-  height: 43px;
-  left: 219px;
-  top: -126px;
-  width: 66px;
-}
-
 #m1-index-tabBar1-page3-label{
   height: 12px;
   left: 0px;
@@ -352,16 +314,16 @@ body{
 
 #m1-index-tabBar1-page3-img{
   height: 30px;
-  left: 18px;
+  left: 42px;
   top: 0px;
   width: 30px;
 }
 
 #m1-index-tabBar1-page3{
   height: 43px;
-  left: 147px;
+  left: 243px;
   top: -83px;
-  width: 66px;
+  width: 114px;
 }
 
 #m1-index-tabBar1-page2-label{
@@ -375,16 +337,16 @@ body{
 
 #m1-index-tabBar1-page2-img{
   height: 30px;
-  left: 18px;
+  left: 42px;
   top: 0px;
   width: 30px;
 }
 
 #m1-index-tabBar1-page2{
   height: 43px;
-  left: 75px;
+  left: 123px;
   top: -40px;
-  width: 66px;
+  width: 114px;
 }
 
 #m1-index-tabBar1-page1-label{
@@ -398,7 +360,7 @@ body{
 
 #m1-index-tabBar1-page1-img{
   height: 30px;
-  left: 18px;
+  left: 42px;
   top: 0px;
   width: 30px;
 }
@@ -407,7 +369,7 @@ body{
   height: 43px;
   left: 3px;
   top: 3px;
-  width: 66px;
+  width: 114px;
 }
 
 #m1-index-tabBar1{
@@ -419,112 +381,23 @@ body{
   width: auto;
 }
 
-#m1-index-back4{
-  border-width: 5px 5px 5px 13px;
-  height: 30px;
-  left: 5px;
-  line-height: 20px;
-  top: -18px;
-  width: 60px;
+#m1-index-text8{
+  height: 26px;
+  left: 33px;
+  line-height: 26px;
+  text-align: left;
+  top: 105px;
+  width: 144px;
 }
 
-#m1-index-text6{
-  height: 25px;
-  left: 146px;
-  line-height: 25px;
-  text-align: center;
-  top: 9px;
-  width: 51px;
-}
-
-#m1-index-navigation5{
-  height: 43px;
-  left: 0px;
-  line-height: 43px;
-  margin-right: 0px;
-  top: 0px;
-  width: auto;
-}
-
-#m1-index-page5-box-scroller{
-  border-top-color: transparent;
-  border-width: 1px 0px 0px 0px;
-  height: 405px;
-  left: 0px;
-  line-height: 40px;
-  margin-right: 0px;
-  top: 0px;
-  width: auto;
-}
-
-#m1-index-page5-box{
-  height: 405px;
-  left: 0px;
-  line-height: 405px;
-  margin-right: 0px;
-  top: 0px;
-  width: auto;
-}
-
-#m1-index-page5{
-  height: 100.0%;
-  left: 0px;
-  top: 0px;
-  width: 100.0%;
-}
-
-#m1-index-back3{
-  border-width: 5px 5px 5px 13px;
-  height: 30px;
-  left: 5px;
-  line-height: 20px;
-  top: -18px;
-  width: 60px;
-}
-
-#m1-index-text5{
-  height: 25px;
-  left: 132px;
-  line-height: 25px;
-  text-align: center;
-  top: 9px;
-  width: 80px;
-}
-
-#m1-index-navigation4{
-  height: 43px;
-  left: 0px;
-  line-height: 43px;
-  margin-right: 0px;
-  top: 0px;
-  width: auto;
-}
-
-#m1-index-page4-box-scroller{
-  border-top-color: transparent;
-  border-width: 1px 0px 0px 0px;
-  height: 405px;
-  left: 0px;
-  line-height: 40px;
-  margin-right: 0px;
-  top: 0px;
-  width: auto;
-}
-
-#m1-index-page4-box{
-  height: 405px;
-  left: 0px;
-  line-height: 405px;
-  margin-right: 0px;
-  top: 0px;
-  width: auto;
-}
-
-#m1-index-page4{
-  height: 100.0%;
-  left: 0px;
-  top: 0px;
-  width: 100.0%;
+#m1-index-image2{
+  -webkit-border-image: url(images/logodbig1-150x150.png) 1 1 1 1 stretch stretch;
+  border-width: 1px 1px 1px 1px;
+  height: 150px;
+  left: 25px;
+  line-height: 148px;
+  top: 54px;
+  width: 150px;
 }
 
 #m1-index-back1{
@@ -538,11 +411,11 @@ body{
 
 #m1-index-text4{
   height: 25px;
-  left: 131px;
+  left: 91px;
   line-height: 25px;
   text-align: center;
   top: 9px;
-  width: 81px;
+  width: 161px;
 }
 
 #m1-index-navigation3{
@@ -581,29 +454,23 @@ body{
   width: 100.0%;
 }
 
-#m1-index-PaperClip1{
-  height: 30px;
-  left: 111px;
-  line-height: 30px;
-  top: 177px;
-  width: 30px;
-}
-
-#m1-index-Clock1{
-  height: 30px;
-  left: 111px;
-  line-height: 30px;
-  top: 74px;
-  width: 30px;
+#m1-index-text7{
+  height: 494px;
+  left: 8px;
+  line-height: 19px;
+  text-align: left;
+  top: 33px;
+  white-space: pre-wrap;
+  width: 336px;
 }
 
 #m1-index-text3{
   height: 25px;
-  left: 125px;
+  left: 98px;
   line-height: 25px;
   text-align: center;
   top: -21px;
-  width: 94px;
+  width: 148px;
 }
 
 #m1-index-back2{
@@ -652,13 +519,13 @@ body{
 }
 
 #m1-index-text1{
-  height: 931px;
+  height: 114px;
   left: 8px;
   line-height: 19px;
   text-align: left;
   top: 7px;
   white-space: pre-wrap;
-  width: 334px;
+  width: 336px;
 }
 
 #m1-index-push2{
@@ -682,11 +549,11 @@ body{
 
 #m1-index-text2{
   height: 25px;
-  left: 93px;
+  left: 116px;
   line-height: 25px;
   text-align: center;
   top: 9px;
-  width: 158px;
+  width: 111px;
 }
 
 #m1-index-navigation1{
@@ -735,13 +602,13 @@ body{
 }
 
 #m1-index-image1{
-  -webkit-border-image: url(images/bannercomposite17.gif) 1 1 1 1 stretch stretch;
+  -webkit-border-image: url(images/default_logo.png) 1 1 1 1 stretch stretch;
   border-width: 1px 1px 1px 1px;
-  height: 100px;
+  height: 71px;
   left: 12px;
-  line-height: 98px;
+  line-height: 69px;
   top: 0px;
-  width: 337px;
+  width: 348px;
 }
 
 #m1-index-panel1-scroller{

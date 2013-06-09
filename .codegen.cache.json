@@ -11,7 +11,8 @@
     "m1_index_tabBar1_page4:click": "action8",
     "m1_index_tabBar1_page5:click": "action9",
     "m1_index_push1:click": "action10",
-    "m1_index_push2:click": "action11"
+    "m1_index_push2:click": "action11",
+    "m1_index_image2:click": "action12"
   },
   "splashScreenHashes": {}
 }
