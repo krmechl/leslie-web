@@ -17,14 +17,19 @@ hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </scri
 <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
 <style type="text/css">
 body {
-	background-color: #C60;
+	background-color: #CCC;
 }
 </style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/script.js"></script>
 <!--slider-->
 <script src="js/modernizr.js"></script>
  <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.button.custom.min.js" type="text/javascript"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 <!-- FlexSlider -->
 <script defer src="js/jquery.flexslider.js"></script>
@@ -46,9 +51,11 @@ body {
 <div class="top-bg">
 <div class="wrap">
 <div class="top-hader">
-	<div class="top-header-left">
-		<a href="tel:5555555555"> Call for Pickup</a>
-	</div>
+  <p>
+  
+  <a href="tel:5555555555">
+  <button>Call For Pickup</button> 
+  </a>
 	<div class="top-header-right">
 		<p>HAVE AN A/C <a href="">SIGN IN</a></p>
 	</div>
@@ -61,28 +68,23 @@ body {
 </div>
 </div>
 </div>
-<div class="menu-bg">
 <div class="wrap">
- <div class="menu">
-        	<ul>
-            	<li><a href="about.html">About</a></li>
-            	<li><a href="service.html">Service</a></li>
-            	<li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="search">
-            <form action="/iphone/search.html">
-                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
-            </form>
-        </div>
-        <div class="sub-head">
-        	<ul>
-            	<li><a href="#" id="menu">Menu  <span></span></a></li>
-            	<li><a href="#" id="search">Search <span></span></a></li>
-            </ul>
-            <div class="clear"></div>
-        </div>
-   <script type="text/javascript">
+  <div class="menu">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  <div class="search"></div>
+  <div class="sub-head">
+    <ul>
+      <li><a href="#" id="menu">Menu  <span></span></a></li>
+      <li><a href="index.html" id="search">Home <span></span></a></li>
+      </ul>
+    <div class="clear"></div>
+    </div>
+  <script type="text/javascript">
 		$(".menu,.search").hide();
 		$("#menu").click(function(){
 			$(".menu").toggle();
@@ -98,9 +100,9 @@ body {
 			$(".text").focus();
 		});
 	</script>
-	<div class="clear"></div>
+  <div class="clear"></div>
 </div>
-</div>
+
 <div class="wrap">
 <div class="flexslider">
    	<div class="flex-viewport" style="overflow: hidden; position: relative;">
@@ -123,43 +125,56 @@ body {
 <div class="wrap">
 <div class="content">
 	<div class="main">
-		<h2 class="">welcome</h2>
-		<h3>Lorem ipsum dolor sit amet,<span> adipisicing</span> sed do eiusmod </h3>
-		<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-		<div class="btn"><a href="details.html"><img src="images/btn.png" alt=""/>read more</a></div>
+		<h2 class="">welcome to biotest express</h2>
+		<h3>your source for reliable, quality medical transportation services</h3>
 	</div>
 	<div class="section group top">
 		<div class="grid_1_of_4 images_1_of_4">
 			<div class="grid box">
-				<a href="details.html"><img src="images/pic1.jpg" alt=""/></a>
+				<a href="details.html"><img src="images/results-driven.jpg" alt=""/></a>
 				<h4>Services</h4>
 			</div>	
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			<div class="btn"><a href="details.html"><img src="images/btn.png" alt=""/>read more</a></div>
+			<p><strong>Bio-Test Express</strong> is healthcare’s premier partner for the vital, time-sensitive transportation of blood, blood-related products, and biohazardous materials. It’s our sole focus. And each day, medical professionals throughout the region rely on Bio-Test Express Couriers because of their professionalism, punctuality, and the knowledge and care they exhibit in handling critical materials.
+The healthcare industry is flourishing with new technology, and everyone must keep up. With new efficiencies across the board, there’s a demand to receive one piece of information faster, because treatment won’t begin without it: The Results. And for biomedical laboratories—that depend on courier transportation—the volume of diagnoses is ever-increasing. Any delays or missteps are unacceptable.
+As Pennsylvania’s first—and one of the nation’s first—licensed medical couriers, Bio-Test Express brings decades of experience in the safe and swift transport of blood and specimens. Since 1981, we’ve provided service to numerous laboratories, hospitals, and blood centers—cutting their operational costs significantly, through improved efficiency and expertise. We know the field, we know the territory, we are Results-Driven.</p>
+			<p>&nbsp;</p>
 		</div>
 		<div class="grid_1_of_4 images_1_of_4">
 		 	<div class="grid box">
-				<a href="details.html"><img src="images/pic3.jpg" alt="" /></a>
-				<h4>Plannings</h4>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			<div class="btn"><a href="details.html"><img src="images/btn.png" alt=""/>read more</a></div>
+				<a href="details.html"><img src="images/biomedical-laboratory.jpg" alt="" /></a>
+				<h4>Safe, Accurate, On-Time Service</h4>
+		 	</div>
+			<p>With each pickup and delivery, <strong>Bio-Test <em>Express</em></strong> couriers solidify the trust that medical technicians have placed in us since 1981. It&rsquo;s a trust built through the understanding that we must continually back up our promise: to be the best, most comprehensive Courier Company serving the healthcare industry. And, to accomplish this, we adhere to time-tested protocols that guarantee success at every stop. What defines our success...? The precise components you request, carefully protected for sterility, received and delivered on or ahead of schedule.<em><strong> Every time…without fail.</strong></em></p>
+			<p>&nbsp;</p>
 		</div>
 		<div class="grid_1_of_4 images_1_of_4">
 			<div class="grid box">
-				<a href="details.html"><img src="images/pic2.jpg"  alt=""/></a>
-				<h4>Investments</h4>
+				<a href="details.html"><img src="images/clock.jpg"  alt=""/></a>
+				<h4>Record Time&#8212;<br>
+			    24/365 Operation</h4>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			<div class="btn"><a href="details.html"><img src="images/btn.png" alt=""/>read more</a></div>
+			<p>Healthcare also turns to <strong>Bio-Test</strong> for point-to-point punctuality in transporting all types of medical records...blood test results, x-rays, and patient histories...also, pharmaceuticals and home infusion products. If you need it moved, trust <strong>Bio-Test</strong>. We'll respond with our prevailing professionalism, care for safety and confidentiality, and timely turnaround.</p>
+			<p>Our normal hours of operation are 7 am to 5 pm, which fits the standard business day. But, while doctors may keep office hours, emergencies don&rsquo;t. For the dedicated medical professionals that are on-call, on-duty, and ready at a moment&rsquo;s notice, <strong>Bio-Test <em>Express</em></strong> is equally vigilant. For those times outside the norm, a direct dial number reaches our 24/7 service, where specific Dispatchers and Couriers are scheduled to ensure a continual presence that our clients can count on. Whether providing back-up staffing, vehicle support, or management input, we&rsquo;re always ready...unwinking in the wee hours; and prepared to handle the busiest of afternoons.</p>
+			<p>&nbsp;</p>
 		</div>
 		<div class="grid_1_of_4 images_1_of_4">
 			<div class="grid box">
-				<a href="details.html"><img src="images/pic4.jpg" alt=""/></a>
-				<h4>Analytics</h4>
+				<a href="details.html"><img src="images/nextel.jpg" alt=""/></a>
+				<h4>Equipment & Safety</h4>
 			</div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			<div class="btn"><a href="details.html"><img src="images/btn.png" alt=""/>read more</a></div>
+		    <ul>
+		      <li><strong>Bio-Test</strong> has a variety of vehicles to meet our customers&rsquo; demands...from PT Cruisers and minivans, to Ford cargo vans and 16-foot straight trucks. All are Company-owned and maintained, and clearly marked with the <strong>Bio-Test</strong> logo.</li>
+		      <li>Every vehicle is equipped with a standard Spill Kit, in the event that a Courier needs to contain a spill or leak of biohazardous material.</li>
+		      <li></li>
+		      <li>At the start of their shift, <strong>Bio-Test</strong> drivers are issued a Nextel two-way communication system with cell phone capabilities.</li>
+		      <li></li>
+		      <li>Depending on the customer&rsquo;s requirements, <strong>Bio-Test</strong> has a system of bar-coding and electronic scanning of delivery items, to provide real-time tracking.</li>
+		      <li></li>
+		      <li>All Couriers carry customized <strong>Bio-Test</strong> specimen transport systems. By using proper combinations of cold packs and dry ice, we&rsquo;re able to ensure that the proper temperature of the specimen is maintained for the duration of the delivery.</li>
+		      <li></li>
+		      <li>When necessary, <strong>Bio-Test</strong> supplies metal Lock Boxes for the client to place outside their office. Our Couriers can then pick up specimens after their offices have closed for the day.</li>
+	      </ul>
+		    <p>&nbsp;</p>
 		</div>
 	</div>
 </div>
@@ -169,52 +184,27 @@ body {
 <div class="footer-bg">
 <div class="wrap">
 <div class="footer">
-	<div class="section group">
-		<div class="col_1_of_4 span_1_of_4">
-			<h2>My Account</h2>
-			<ul class="nav1">
-				<li><a href="">Always free from repetition</a></li>
-				<li><a href="">Morbi blandit turpis ewuhre</a></li>
-				<li><a href="">Integer id ante nec elit mo</a></li>
-				<li><a href="">Maecenas accumsan lorem sed</a></li>
-			</ul>
-		</div>
-		<div class="col_1_of_4 span_1_of_4 top">
-			<h2>Follow Us</h2>
-			<ul class="nav1">
-				<li><a href=""><img src="images/facebook.png" title="facebook" alt="" />Facebook</a></li>
-				<li><a href=""><img src="images/twitter.png" title="twitter" alt="" />Twitter</a></li>
-				<li><a href=""><img src="images/gplus.png" title="rss" alt="" />Google Plus</a></li>
-			</ul>
-		</div>
-		<div class="col_1_of_4 span_1_of_4 top">
-			<h2>Information</h2>
-			<ul class="nav1">
-				<li><a href="">Always free from repetition</a></li>
-				<li><a href="">Morbi blandit turpis ewuhre</a></li>
-				<li><a href="">Integer id ante nec elit mo</a></li>
-				<li><a href="">Maecenas accumsan lorem sed</a></li>
-			</ul>
-		</div>
-		<div class="col_1_of_4 span_1_of_4 top">
-			<h2>Contact Us</h2>
-			<ul class="nav1">
-				<li><a href="">22-56-2-9 Sit Amet, Lorem,</a></li>
-				<li><a href="">USA </a></li>
-				<li><a href="">Phone:(00) 222 666 444 </a></li>
-				<li><a href=""> Email: <span>info@mycompany.com</span></a></li>
-			</ul>
-		</div>
-	</div>
+<img src="images/Bio-Test-Logo.gif" alt=""/>
+	<div class="section group">Bio-Test <em>Express</em> ~ P.O. Box 5 ~ Allison Park, PA 15101<br>
+	  Office: 724-444-0933 ~ Toll-Free: 1-800-726-3451 ~ Fax: 724-444-0949</div>
 </div>
 </div>
 </div>
 <div class="footer1-bg">
-<div class="wrap">
-<div class="footer1">
-		<p class="w3-link">© All Rights Reserved | Design by&nbsp; <a href="http://w3layouts.com/"> W3Layouts</a></p>
-	</div>
+<div class="wrap"></div>
 </div>
-</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+$(function() {
+	$( "#Button1" ).button({
+		icons:{primary: "ui-icon-link"}
+	}); 
+});
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
 </body>
 </html>
